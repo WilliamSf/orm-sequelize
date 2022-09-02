@@ -6,23 +6,23 @@ module.exports = {
         "username": process.env.USER_MYSQL_DEV,
         "password": process.env.PASSWORD_MYSQL_DEV,
         "database": process.env.DATABASE_MYSQL_DEV,
-        "host": "127.0.0.1",
+        "host": process.env.HOST_MYSQL_DEV,
         "dialect": "mysql",
         "operatorsAliases": false
     },
     "test": {
-        "username": "root",
-        "password": null,
-        "database": "database_test",
-        "host": "127.0.0.1",
+        "username": process.env.USER_MYSQL_TEST,
+        "password": process.env.PASSWORD_MYSQL_TEST,
+        "database": process.env.DATABASE_MYSQL_TEST,
+        "host": process.env.HOST_MYSQL_TEST,
         "dialect": "mysql",
         "operatorsAliases": false
     },
     "production": {
-        "username": "root",
-        "password": null,
-        "database": "database_production",
-        "host": "127.0.0.1",
+        "username": process.env.USER_MYSQL_PROD,
+        "password": process.env.PASSWORD_MYSQL_PROD,
+        "database": process.env.DATABASE_MYSQL_PROD,
+        "host": process.env.HOST_MYSQL_PROD,
         "dialect": "mysql",
         "operatorsAliases": false
     }
